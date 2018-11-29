@@ -17,6 +17,5 @@ public class PromptUser {
 
         System.out.println("Priority of Mail (Enter 'n/a' if unknown): ");
         String mPriority = input.nextLine();
-
-
+        
 }
