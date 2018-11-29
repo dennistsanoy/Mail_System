@@ -20,7 +20,7 @@ public class MainMenu {
     private static final String mM3 = C_BLUE + "Edit Mail" + ANSI_RESET;
     private static final String mM4 = C_YELLOW + "Remove Mail" + ANSI_RESET;
 
-    public static void main() {
+    public static int main() {
         Scanner input = new Scanner(System.in);
 
         System.out.println("\nWhat do you want to do with the Mail System?\n");
@@ -33,9 +33,10 @@ public class MainMenu {
         System.out.println();
 
         switchOperation(choice);
-        }
+        return choice;
+    }
 
-    public static void printMenu(){
+    public static void printMenu() {
         System.out.println("0 - " + mM0);
         System.out.println("1 - " + mM1);
         System.out.println("2 - " + mM2);
@@ -44,7 +45,7 @@ public class MainMenu {
         System.out.print("Option: ");
     }
 
-    public static int validMenuInput(int option){
+    public static int validMenuInput(int option) {
         Scanner input = new Scanner(System.in);
 
         while ((option != 0) && (option != 1) && (option != 2) && (option != 3) && (option != 4)) {
@@ -55,8 +56,8 @@ public class MainMenu {
         return option;
     }
 
-    public static void switchOperation(int option){
-        switch(option){
+    public static void switchOperation(int option) {
+        switch (option) {
             case 0:
                 System.out.println("You have chosen to " + mM0 + "\n");
                 System.out.println("Thank you for using the Mail System!");
