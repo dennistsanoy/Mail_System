@@ -7,7 +7,7 @@ public class PromptUser {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Name (Enter 'n/a' if unknown): ");
-        String name =  input.nextLine();
+        String name = input.nextLine();
 
         System.out.println("Delivery Address (Enter 'n/a' if unknown): ");
         String dAddress = input.nextLine();
@@ -17,5 +17,6 @@ public class PromptUser {
 
         System.out.println("Priority of Mail (Enter 'n/a' if unknown): ");
         String mPriority = input.nextLine();
-        
+
+    }
 }
