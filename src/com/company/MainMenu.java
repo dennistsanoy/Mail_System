@@ -28,8 +28,7 @@ public class MainMenu {
 
         printMenu();
 
-        int choice = input.nextInt();//variables
-        choice = validMenuInput(choice);
+        int choice = Valid.validMenuInput();
 
         System.out.println();
 
@@ -45,16 +44,6 @@ public class MainMenu {
         System.out.print("Option: ");
     }
 
-    public static int validMenuInput(int option) {
-        Scanner input = new Scanner(System.in);
-
-        while ((option != 0) && (option != 1) && (option != 2) && (option != 3)) {
-            System.out.print("\nInvalid option. Please select an option between (0-5): ");
-            option = input.nextInt();
-        }
-
-        return option;
-    }
 //switch statement
     public static void switchOperation(int option) {
         switch (option) {
