@@ -18,14 +18,32 @@ public class PromptUser {
         System.out.print("Priority of Mail (Enter 'n/a' if unknown): ");
         String mPriority = input.nextLine();
 
-        String[] mFile = new String[5];
+        String[] mFile = new String[4];
         mFile[0] = name;
         mFile[1] = dAddress;
-        mFile[2] = mType;
-        mFile[3] = mPriority;
-        mFile[4] = "0";
+        if (mType.equals ("1") ){
+            mFile[2] = "Package";
+        }
+        else if (mType.equals ("2")) {
+            mFile[2] = "Letter";
+        }
+        else {
+            mFile[2] = mType;
+        }
+        if (mPriority.equals ("1")) {
+            mFile[3] = "Urgent";
+        }
+        else if (mPriority.equals("2")) {
+            mFile[3] = "Expedited";
+        }
+        else if (mPriority.equals("3")) {
+            mFile[3] = "Standard";
+        }
+        else {
+            mFile[3] = mPriority;
+        }
         System.out.println();
-        Mail_Database.printSingleArray(mFile);
+
 
         return mFile;
 
