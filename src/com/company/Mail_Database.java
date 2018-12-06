@@ -64,7 +64,7 @@ public class Mail_Database {
 
     public static void printArray(int n, String[][] array){
         for (int i = 0; i < array[n].length; i++) {
-            System.out.print(array[n][i] + " ");
+            System.out.printf("%25s" , array[n][i]);
         }
         System.out.println();
     }
@@ -74,7 +74,7 @@ public class Mail_Database {
         for (int row = 0; row < array.length; row++) {
             for (int column = 0; column < array[row].length; column++) {
                 if (array[row][column] != null) {
-                    System.out.print(array[row][column] + " ");
+                    System.out.printf("%25s" , array[row][column]);
                 }
                 if (array[row][column] == null) break;
             }
