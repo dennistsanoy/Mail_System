@@ -10,6 +10,7 @@ public class Search_Items {
         int[] spot = new int[25];
         System.out.println();
         boolean theyMatch = true;
+        boolean any = false;
         for (int i = 0; i < database.length; i++) {
             for (int a = 0; a < terms.length; a++) {
                     //string class methods
@@ -18,6 +19,7 @@ public class Search_Items {
                     else if (!terms[a].equals(database[i][a])){
                         //they don't match!
                         theyMatch = false;
+                        any = true;
                         }
                 }
                 //conditionals
@@ -26,6 +28,9 @@ public class Search_Items {
                     spot[Mail_Database.findEmpty(spot)] = i;
                     }
                 theyMatch = true;
+            }
+            if (any == false){
+                System.out.println("No mail found with matching search terms.");
             }
         return spot;
     }
