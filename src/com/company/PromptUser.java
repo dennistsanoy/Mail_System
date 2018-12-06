@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class PromptUser {
 
+
     public static String[] main() {
         Scanner input = new Scanner(System.in);
 

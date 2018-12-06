@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class MainMenu {
     //color coding
+    //encapsulation
+    //static
     private static final String ANSI_RESET = "\u001B[0m"; //RESET COLORS
     private static final String C_BLACK = "\033[0;30m";   // BLACK
     private static final String C_RED = "\033[0;31m";     // RED
@@ -20,13 +22,13 @@ public class MainMenu {
     public static final String opt3 = C_BLUE + "Display All Mail" + ANSI_RESET;
 
     public static int main() {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);//Scanner
 
         System.out.println("\nWhat do you want to do with the Mail System?\n");
 
         printMenu();
 
-        int choice = input.nextInt();
+        int choice = input.nextInt();//variables
         choice = validMenuInput(choice);
 
         System.out.println();
@@ -53,7 +55,7 @@ public class MainMenu {
 
         return option;
     }
-
+//switch statement
     public static void switchOperation(int option) {
         switch (option) {
             case 0:

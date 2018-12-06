@@ -24,6 +24,7 @@ public class Mail_Database {
         String[] tArray = Input_Mail.Terms();
         String[][] nDatabase = Update(tArray, database);
 
+        //method passed by arguements
         return nDatabase;
 
     }
@@ -61,24 +62,15 @@ public class Mail_Database {
         return n;
     }
 
-    public static void printSingleArray(int n, String[][] array){
+    public static void printArray(int n, String[][] array){
         for (int i = 0; i < array[n].length; i++) {
             System.out.print(array[n][i] + " ");
         }
         System.out.println();
     }
 
-    public static void printSingleArray(String[] array){
-        for (int column = 0; column < array.length; column++) {
-            if (array[column] != null) {
-                System.out.print(array[column] + " ");
-            }
-            if (array[column] == null) break;
-        }
-        System.out.println();
-    }
 
-    public static void printFullArray(String[][] array) {
+    public static void printArray(String[][] array) {
         for (int row = 0; row < array.length; row++) {
             for (int column = 0; column < array[row].length; column++) {
                 if (array[row][column] != null) {

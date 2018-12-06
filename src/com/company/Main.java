@@ -25,7 +25,7 @@ public class Main {
                     String[][] nDatabase = Mail_Database.nDatabase(bDatabase);
                     bDatabase = nDatabase;
                 } else if (choice == display) {
-                    Mail_Database.printFullArray(bDatabase);
+                    Mail_Database.printArray(bDatabase);
                 }
                 System.out.println();
                 choice = MainMenu.main();

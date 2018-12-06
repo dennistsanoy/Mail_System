@@ -12,12 +12,16 @@ public class Search_Items {
         boolean theyMatch = true;
         for (int i = 0; i < database.length; i++) {
             for (int a = 0; a < terms.length; a++) {
+                    //string class methods
                     if (terms[a].equals("n/a"));//do nothing
+
                     else if (!terms[a].equals(database[i][a])){
                         //they don't match!
                         theyMatch = false;
                         }
                 }
+                //conditionals
+                //operational
                 if (theyMatch == true){
                     spot[Mail_Database.findEmpty(spot)] = i;
                     }
@@ -29,7 +33,7 @@ public class Search_Items {
     public static void printMatch(int[] spots, String[][] database){
         for(int i = 0; i < spots.length; i++) {
             if (spots[i] != 0){
-                Mail_Database.printSingleArray(spots[i], database);
+                Mail_Database.printArray(spots[i], database);
             }
         }
     }

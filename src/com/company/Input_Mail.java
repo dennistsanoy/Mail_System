@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Scanner;
+//rand
 import java.util.Random;
 
 public class Input_Mail {
