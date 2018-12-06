@@ -19,8 +19,11 @@ public class Search_Items {
                     else if (!terms[a].equals(database[i][a])){
                         //they don't match!
                         theyMatch = false;
-                        any = true;
                         }
+
+                    if (terms[a].equals(database[i][a])){
+                        any = true;
+                    }
                 }
                 //conditionals
                 //operational
@@ -29,9 +32,10 @@ public class Search_Items {
                     }
                 theyMatch = true;
             }
-            if (any == false){
-                System.out.println("No mail found with matching search terms.");
-            }
+
+        if (any == false){
+            System.out.println("No mail found with matching search terms.");
+        }
         return spot;
     }
 
