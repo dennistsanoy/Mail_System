@@ -3,7 +3,7 @@ package com.company;
 
 public class Search_Items {
     public static void main() {
-        System.out.println("Input the following mail components to narrow down the search.\n");
+        System.out.println("\nInput the following mail components to narrow down the search.\n");
     }
 
     public static int[] Search(String[] terms, String[][] database) {
