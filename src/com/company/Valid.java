@@ -42,6 +42,19 @@ public class Valid {
         return n;
     }
 
+    public static String typeInValidation(){
+        Scanner input = new Scanner(System.in);
+
+        String n = input.nextLine();
+
+        while(((!n.equals("1")) && (!n.equals("2")))){
+            System.out.print("Invalid Input. \nEnter '1', or '2': ");
+            n = input.nextLine();
+        }
+
+        return n;
+    }
+
     public static String priorityValidation(){
         Scanner input = new Scanner(System.in);
 
@@ -49,6 +62,19 @@ public class Valid {
 
         while(((!n.equals("1")) && (!n.equals("2")) && (!n.equals("3")) && (!n.equals("n/a")))){
             System.out.print("Invalid Input. \nEnter '1', '2', '3' or 'n/a': ");
+            n = input.nextLine();
+        }
+
+        return n;
+    }
+
+    public static String priorityInValidation(){
+        Scanner input = new Scanner(System.in);
+
+        String n = input.nextLine();
+
+        while(((!n.equals("1")) && (!n.equals("2")) && (!n.equals("3")))){
+            System.out.print("Invalid Input. \nEnter '1', '2', or '3': ");
             n = input.nextLine();
         }
 

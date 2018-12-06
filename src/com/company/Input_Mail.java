@@ -24,11 +24,11 @@ public class Input_Mail {
 
         //input type of mail
         System.out.print("Please enter the type of mail (1 for package, 2 for letter): ");
-        mType = Valid.typeValidation();
+        mType = Valid.typeInValidation();
 
         //input priority of mail
         System.out.print("Please enter the priority (1 for Urgent, 2 for expedited, 3 for standard): ");
-        mPriority = Valid.priorityValidation();
+        mPriority = Valid.priorityInValidation();
 
         String[] deliveryArray = new String[5];
 
