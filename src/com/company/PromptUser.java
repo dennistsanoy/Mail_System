@@ -14,10 +14,10 @@ public class PromptUser {
         String dAddress = input.nextLine();
 
         System.out.print("Type of Mail (Enter 1 - Package, 2 - Letter, 'n/a' if unknown): ");
-        String mType = input.nextLine();
+        String mType = Valid.typeValidation();
 
         System.out.print("Priority of Mail (Enter 'n/a' if unknown): ");
-        String mPriority = input.nextLine();
+        String mPriority = Valid.priorityValidation();
 
         String[] mFile = new String[4];
         mFile[0] = name;
@@ -49,6 +49,4 @@ public class PromptUser {
         return mFile;
 
     }
-
-    //public void static
 }

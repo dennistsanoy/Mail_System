@@ -10,6 +10,7 @@ public class Main {
         int search = 1;
         int input = 2;
         int display = 3;
+
         String[][] database = Mail_Database.Database();
         String[][] bDatabase = database;
         choice = MainMenu.main();
